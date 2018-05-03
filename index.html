@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This website hosts all the things Will is selling.">
+    <meta name="author" content="Will Floyd">
+    <link rel="icon" href="Sale.ico">
+
+
+    <title>Buy my Stuff!</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/ie10-viewport-hack.css" rel="stylesheet">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77841331-3', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+
+</script>
+    <style>
+      body{
+        padding-top: 70px;
+
+      }
+      .navbar-nav{
+        cursor: pointer;
+      }
+      .img-fluid{
+        width:100%;
+      }
+      .home-tit{
+        margin-bottom: 30px;
+      }
+      .home-tit>a {
+        color: #ffffff;
+      }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="homeLink" href="index.html">Will's Online Yard Sale</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a data-toggle="modal" data-target="#About" id="aboutLink">About the Items</a></li>
+            <li><a data-toggle="modal" data-target="#HowTo" id="howToLink">How to Buy</a></li>
+            <li><a data-toggle="modal" data-target="#Contact" id="contactLink">Contact Me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+
+      <!-- dynamic page content -->
+      <div id="page-content"></div>
+
+      <!-- information modals -->
+      <div class="modal fade" id="About" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">About the Items</h4>
+            </div>
+            <div class="modal-body">
+              <p>All of these items are used, but not abused. I take care of my possesions. I also include friend's items on this page. I'll give you the proper contact info if the item belongs to a friend. Prices are negotiable. If you're in midtown and want to post on this site let me know. I can probably do that for you. If you have any questions at all, feel free to email me.</p>
+              <p><b>Why this instead of Craigslist?</b> Honestly, I don't like logging into craigs every week, Facebook sales groups are very popular and your post may get buried. Especially not for multiple items. I'll stick to one at a time on those.</p>
+            </div>
+            <div class="modal-footer">
+              <a type="button" class="btn btn-primary" href="mailto:inquiry@forsale.willfloyd.com">Email Me</a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">OK!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="HowTo" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">How To Buy</h4>
+            </div>
+            <div class="modal-body">
+              <p><a href="mailto:inquiry@forsale.willfloyd.com">Email me</a>, or text me at (916)251-9832. I am not willing to ship so local pickup is necessary. I also prefer cash but PayPal is also an option. Unfortunately, I do not have a way to transport large furniture so you will need to bring a truck, if it is necessary. </p>
+            </div>
+            <div class="modal-footer">
+              <a type="button" class="btn btn-primary" href="mailto:inquiry@forsale.willfloyd.com">Email Me</a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">OK!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Contact" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+            </div>
+            <div class="modal-body">
+              <p>My phone number (please text): (916) 251-9832</p>
+              <p>My email address: <a href="mailto:inquiry@forsale.willfloyd.com">inquiry@forsale.willfloyd.com</a></p>
+              <p>Please, Please, Please, do not contact me asking if it is still available, and read the posts completely before contacting me. Thank you in advance.</p>
+              <p>I am willing to answer any questions you have to the best of my ability. If the item is being sold by a friend, then I will send both of you the other's contact info. You should be able to work it out from there.</p>
+            </div>
+            <div class="modal-footer">
+              <a type="button" class="btn btn-primary" href="mailto:inquiry@forsale.willfloyd.com">Email Me</a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">OK!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="ie10-viewport-hack.js"></script>
+    <script src="items.js"></script>
+    <script src="forsale.js"></script>
+    <script>
+      $(function(){
+        if(window.location.hash) itemDetail(window.location.hash.substring(1));
+        else itemGrid();
+      });
+    </script>
+  </body>
+</html>
